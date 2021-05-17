@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/LC4")
 public class T4_LifeCycle extends HttpServlet{
+	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("이곳은 doGet메소드 입니다.");
@@ -39,11 +40,11 @@ public class T4_LifeCycle extends HttpServlet{
 	
 	@PostConstruct
 	public void initPostConstruct() {
-		System.out.println("이곳은 @PostConstruct 어노테이션으로 선언된 메소드 입니다.");
+		System.out.println("이곳은 @PostConstruct 어노테이션으로 선언된 메소드입니다.");
 	}
 	
 	@PreDestroy
-	public void destroyPredestroy() {
-		System.out.println("이곳은 @PreDestroy 어노테이션으로 선언된 메소드 입니다.");
+	public void destroyPreDestroy() {
+		System.out.println("이곳은 @PreDestroy 어노테이션으로 선언된 메소드입니다.");
 	}
 }

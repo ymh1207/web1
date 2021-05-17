@@ -1,6 +1,7 @@
-package t0517_LifeCycle;
+package t0513;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,16 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/LC1")
-public class T1_LifeCycle extends HttpServlet{
-	
-	@Override
+
+@WebServlet("/Test3")
+public class Test3 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("이곳은 doGet메소드 입니다.");
-	}
-	
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("이곳은 doPost메소드 입니다.");
+		response.setContentType("text/html; charset=utf-8");
+		
+		PrintWriter out = response.getWriter();
+		
+		out.println("test3ㄱㄴㄷㄹ");
 	}
 }
