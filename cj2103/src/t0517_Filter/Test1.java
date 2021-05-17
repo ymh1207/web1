@@ -25,6 +25,6 @@ public class Test1 extends HttpServlet {
 		
 		out.println("<br/>성명 : " + name);
 		out.println("<br/>나이 : " + age);
-		out.println("<br/><a href='"+request.getContextPath()+"/0517/test1.jsp'>돌아가기</a>");
+		out.println("<br/><a href='"+request.getContextPath()+"/0517/0517/test1.jsp'>돌아가기</a>");
 	}
 }
