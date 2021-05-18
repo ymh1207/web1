@@ -1,0 +1,3 @@
+웹프로젝트에 db lb넣기
+MySQL Server5.7 -> mysql-connector-java-5.1.47-bin.jar -> 웹프로젝트 WEB-INF -> lib 복사붙여넣기
+프론트 컨트롤러
